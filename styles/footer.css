@@ -1,0 +1,20 @@
+
+
+.box2 {
+  width: 100vw;
+  height: 2px;
+  background-color: rgba(231, 193, 119, 1);
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+
