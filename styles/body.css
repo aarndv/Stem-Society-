@@ -110,14 +110,16 @@
 }
 
 .goals-container {
-  margin-top: 25px;
+  margin: 25px 30px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  height: 1000px;
-  width: 100%;
-  gap: 3rem;
+  justify-content: left;
+  height: 1025px;
+  width: calc(100%-0);
+  gap: 2rem;
+  background-color: rgb(127, 7, 32);
+  box-shadow: .125rem .125rem 2rem rgba(0, 0, 0, 0.35);
 }
 
 .goals-container h2 {
@@ -130,6 +132,7 @@
 }
 
 .goal-card {
+  margin: 0;
   background-color: rgb(255, 255, 255);
   /*background-image*/ 
   /*background-size*/ 
@@ -186,33 +189,57 @@
 }
 
 .faq {
-  margin: 5rem 0.5rem 0rem;
+  margin: 0rem 0.5rem 0rem;
   height: 800px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
   color: rgb(231,193,110);
+  padding: 0px;
 }
 
 .faq > h2 {
   font-weight: bold;
   font-family: Georgia;
-  font-size: 22px;
-  text-shadow: 2px 2px 1px rgb(255, 255, 255, 0.3)
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 1px rgb(0, 0, 0, 0.5);
+}
+
+.quote-img {
+  position: absolute;
+  width: 120px;
 }
 
 .question-card {
+  filter: brightness(0.9);
   background-image: linear-gradient(135deg, rgb(251,  193, 110) 40%,rgb(107,27,32));
-  box-shadow: .5rem .5rem 0 rgba(0, 0, 0, 0.15), inset 1px 1px 5px rgb(255, 255, 255, 0.9);
-  height: 210px;
-  width: 90vw;
+  box-shadow: .5rem .5rem 1rem rgba(0, 0, 0, 0.15), inset 1px 1px 5px rgb(255, 255, 255, 0.9);
+  width: 80vw;
   border-radius: 5px;
+  padding: 3.5rem 1rem 1rem;
+  font-family: Montserrat;
+  position: relative;
 }
 
-/*when hovering, use transform: scale(value);*/ 
-/*Use position: absolute for the text (also background color rgba(0, 0, 0, 0.6) for a darken effect*/ 
+.question-card > h3{
+  color: rgb(107,7,32);
+  text-shadow: 1px 1px 0px rgb(0, 0, 0, 0.35);
+  text-align: left;
+  font-size: 25px;
+}
 
+.question-card > p {
+  color: black;
+  text-align: left;
+  line-height: 24px;
+}
+
+.quote-img {
+  position: absolute;
+  top: -20px;
+  left: -10px;
+}
 @media only screen and (min-width: 560px) {
   .thumbnail {
     height: 300px;
