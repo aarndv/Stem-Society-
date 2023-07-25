@@ -45,16 +45,19 @@
 }
 
 .about-us {
-  margin: 2.25rem 1.5rem 0;
+  margin: .4rem 2.75rem 0;
+}
+
+.mandv {
+  margin-top: 2.5rem;
 }
 
 .text-paragraph {
   font-family: Montserrat;
   color: rgb(231,193,110);
   line-height: 25px;
-  text-align: left;
+  text-align: center;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-  text-align: left;
   font-size: 1rem;
 }
 
@@ -105,43 +108,49 @@
   padding: 0 1rem; 
   color: rgb(107,27,32);
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
-  text-align: center;
   font-weight: 500;
 }
 
 .goals-container {
-  margin: 25px 30px 0;
+  margin: 8rem 30px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: left;
-  height: 1075px;
+  height: 1175px;
   width: calc(100%-0);
-  gap: 2rem;
+  border-radius: 1rem;
+  gap: 4rem;
   background-color: rgb(127, 7, 32);
   box-shadow: .125rem .125rem 2rem rgba(0, 0, 0, 0.35);
 }
 
 .goals-title {
   filter: brightness(0.9);
-  background-image: linear-gradient(135deg, rgb(251,  193, 110) 40%,rgb(107,27,32));
+  background-image: linear-gradient(135deg, rgb(251,  193, 110),rgb(207,127,32));
   box-shadow: .5rem .5rem 1rem rgba(0, 0, 0, 0.35), inset 1px 1px 5px rgb(255, 255, 255, 0.4);
   width: 80vw;
   border-radius: 5px;
   padding: .5rem 1rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
   font-family: Montserrat;
   text-align: center;
+  
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgb(107, 7, 32);
 }
 
 .goals-container h2 {
   font-size: 2rem;
   font-style: Georgia;
   color: white;
-  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
   border-radius: 1rem;
   margin: 0px;
 }
+
+
 
 .goal-card {
   margin: 0;
@@ -152,7 +161,7 @@
   height: 200px;
   width: 80vw;
   position: relative;
-  box-shadow: -7px -7px 0px rgb(255, 255, 255, 0.85), 7px 7px 0px rgb(231,193,110, 0.9), inset 4px 4px 15px white;
+  box-shadow: -3.5px -3.5px 0px rgb(255, 255, 255, 0.85), 3.5px 3.5px 0px rgb(231,193,110, 0.9), inset 4px 4px 15px white, 10px 10px 25px rgba(0, 0, 0, 0.5)
 }
 
 .card-text {
@@ -169,6 +178,12 @@
 
 .goal-card:hover {
   transform: scale(1.04);
+}
+
+.goal-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
 }
 
 .goal1 {
@@ -226,8 +241,8 @@
 
 .faq h2{
   font-weight: bold;
-  font-family: Georgia;
-  font-size: 1.5rem;
+  font-family: Montserrat;
+  font-size: 1.125rem;
   text-shadow: 2px 2px 1px rgb(0, 0, 0, 0.5);
 }
 
@@ -238,13 +253,19 @@
 
 .question-card {
   filter: brightness(0.9);
-  background-image: linear-gradient(135deg, rgb(251,  193, 110) 40%,rgb(107,27,32));
+  background-image: linear-gradient(135deg, rgb(251,  193, 110) 40%,rgb(127,67,62));
   box-shadow: .5rem .5rem 1rem rgba(0, 0, 0, 0.35), inset 1px 1px 5px rgb(255, 255, 255, 0.4);
   width: 80vw;
   border-radius: 5px;
-  padding: 3.5rem 1rem 1rem;
+  padding: 3.5rem 1rem 2.5rem;
   font-family: Montserrat;
   position: relative;
+}
+
+.question-card hr {
+  border-color: rgb(151,  27, 32);
+  border-style: solid;
+  border-width: 1pxs;
 }
 
 .question-card > h3{
@@ -255,7 +276,8 @@
 }
 
 .question-card > p {
-  color: black;
+  color: rgb(137, 7, 32);
+  text-shadow: 1px 1px 2px rgba(200, 200, 200, 0.6), 0.2px 0.2px 0px rgba(0, 0, 0, 1);
   text-align: left;
   line-height: 24px;
 }
@@ -265,9 +287,11 @@
   top: -20px;
   left: -10px;
 }
+
 @media only screen and (min-width: 560px) {
   .thumbnail {
     height: 300px;
+    object-position: center;
   }
 
   .title-container {
@@ -278,6 +302,31 @@
   .text-paragraph {
     font-size: 1.2rem;
   }
+
+  .goal1 {
+    background-image: url(../imgs/bg1.jpg);
+    background-size: 600px; 
+    background-position-y: 25%;
+  }
+
+  .goal2 {
+    background-image: url(../imgs/bg2.jpg);
+    background-size: 480px;
+    background-position-y: 60%;
+  }
+
+  .goal3 {
+    background-image: url(../imgs/bg3.jpg);
+    background-size: 450px;
+    background-position-x: 100%;
+  }
+
+  .goal4 {
+    background-image: url(../imgs/bg4.jpg);
+    background-size: 480px;
+  }
+
+  
 }
 
 @media only screen and (min-width: 820px) {
@@ -285,7 +334,7 @@
     height: 400px;
     width: 100%;
     object-position: center;
-    filter: brightness(0.7)
+    filter: brightness(0.75)
   }
 
   .title-container {
@@ -297,4 +346,141 @@
     margin-top: 3rem;
     font-size: 1.4rem;
   }
+
+  .about-us {
+    margin: 2rem 7rem;
+  }
+
+  .title-ribbon {
+    border-radius: 4rem;
+  }
+
+  .line-div {
+    display: none;
+  }
+
+  .mission-vision {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5rem;
+    background: none;
+    box-shadow: none;
+  }
+
+  .vision,
+  .mission {
+    flex: 1;
+    padding: 1rem;
+    height: 400px;
+    margin: 0 1.5rem;
+    background-color: rgb(231,193,110);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  }
+
+  .goals-container {
+    height: 800px;
+    background-image: radial-gradient(rgb(107, 7, 32), rgb(137, 27, 42));
+    border-radius: 2rem;
+  }
+
+  .goals-container p{
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .card-text {
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+
+  .goal-flex {
+    flex-direction: row;
+  }
+
+  .goal-card {
+    width: 300px;
+    height: 250px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(107, 7, 32);
+    box-shadow: -3.5px -3.5px 0px rgb(255, 255, 255, 0.85), 3.5px 3.5px 0px rgb(231,193,110, 0.9), inset 4px 4px 15px white, 1rem 1rem 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .goal1 {
+    background-image: url(../imgs/bg1.jpg);
+    background-size: 500px; 
+    background-position-x: 25%;
+  }
+
+  .goal2 {
+    background-image: url(../imgs/bg2.jpg);
+    background-size: 500px;
+    background-position-y: 60%;
+  }
+
+  .goal3 {
+    background-image: url(../imgs/bg3.jpg);
+    background-size: 450px;
+    background-position-x: 100%;
+  }
+
+  .goal4 {
+    background-image: url(../imgs/bg4.jpg);
+    background-size: 300px;
+  }
+
+  .question-card {
+    padding: 3rem;
+  }
+
+  .question-card > h3{
+    font-size: 2rem;
+  }
+
+  .question-card > p {
+    font-size: 1.25rem;
+  }
+
+  .faq-flex {
+    display: flex;
+    align-items:  center;
+    flex-direction: column;
+  }
+
+  .faq {
+    gap: 4rem;
+    align-items: baseline;
+  }
+
+  .faq-title {
+    height: 200px;
+    width: 500px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(231,193,110);
+  }
+
+  .faq h2 {
+    font-size: 1.5rem;
+  }
 }
+
+
+
+@media only screen and (min-width: 1165px) {
+  .vision,
+  .mission {
+    height: 250px;
+  }
+
+  .goals-container p{
+    font-size: 2rem;
+  }
+
+  .goal-card {
+    width: 500px;
+  }
+}
+
