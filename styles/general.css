@@ -21,11 +21,20 @@ body {
 }
 
 body {
+  overflow-y: hidden;
   margin: 0;
   padding-top: 114px;
-  height: 4200px;
+  height: 4600px;
   background-image: linear-gradient(rgb(107,7,32) 80%, rgb(231,193,110));
   overflow-x: hidden;
+}
+
+
+
+@media only screen and (min-width: 500px) {
+  body {
+    height: 4400px;
+  }
 }
 
 @media only screen and (min-width: 820px) {
