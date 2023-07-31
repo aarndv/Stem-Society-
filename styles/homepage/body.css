@@ -376,7 +376,7 @@
 .footer-rights {
   color: rgb(207,127,32);
   font-weight: 300;
-  font-size: .75rem;
+  font-size: .875rem;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.35);
 }
 
@@ -397,35 +397,59 @@
 .right-column-contacts h3{
   font-size: 1.625rem;
   color: rgb(231,193,110);
-  margin: 0 1rem;
+  margin: 0 2rem 1rem;
+}
+
+.column-contacts {
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center ;
+}
+
+.column-contacts > div, .column-contacts a {
+  display: inline-block;
 }
 
 .right-column-text p, .column-contacts p{
   margin: 1rem 1rem;
   color: rgb(207,127,32);
-}
-
-.column-contacts a{
-  text-decoration: none;
-  color: rgb(207,127,32);
+  display: inline-block;
 }
 
 .column-contacts a{
   transition: all 120ms;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(207,127,32);
 }
 
-.column-contacts a:hover {
+.column-contacts img:hover, .column-contacts p:hover {
   color: gold;
-  opacity: 0.5;
+  opacity: 0.2;
   cursor: pointer;
+}
+
+.logo-flex {
+  display: flex;
+  align-items: center;
+  justify-content: left;
 }
 
 .facebook-logo {
   width: 24px;
-  margin-left: 1rem;
 }
 
+.email-logo {
+  width: 24px;
+}
 
+@media only screen and (min-width: 500px) {
+  .contacts-container {
+    margin-top: 42rem;
+  }
+}
 
 @media only screen and (min-width: 560px) {
   .thumbnail {
@@ -529,7 +553,7 @@
     flex: 1;
     padding: 1rem;
     height: 400px;
-    margin: 0 .5rem 10rem;
+    margin: 0 .5rem 0rem;
     background-color: rgb(231,193,110);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
   }
@@ -555,7 +579,7 @@
     height: 800px;
     background-image: linear-gradient( rgb(231,193,110), rgb(207,127,32));
     border-radius: 2rem;
-    margin: 8rem 0rem 0;
+    margin: 4rem 0rem 0;
     box-shadow: 0 0 5rem rgba(0, 0, 0, 0.55);
   }
 
@@ -645,6 +669,7 @@
     flex-direction: row;
     align-items: start;
     justify-content: space-between;
+    margin-top: 45rem;
   }
 
   .left-column-contacts {
@@ -673,5 +698,8 @@
   .goal-card {
     width: 500px;
   }
-}
 
+  .contacts-container {
+    margin-top: 35rem;
+  }
+}

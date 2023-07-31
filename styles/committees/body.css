@@ -1,0 +1,89 @@
+main {
+  background-color: rgb(107, 7, 32);
+  width: 100vw;
+  height: 3000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+  padding: 3.5rem 0rem;
+} 
+
+.main-title-section {
+  width: 300px;
+  height: 120px;
+  border-style: solid;
+  border-color: rgb(231, 193, 110);
+  border-radius: 8px;
+  border-width: 1px;
+  padding: 1rem 1rem 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin-bottom: 5rem;
+}
+
+.main-title-section h2,
+.main-title-section h3 {
+  margin: 0;
+  text-align: center;
+  font-family: Playfair Display, Serif;
+  color: rgb(231, 193, 110);
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
+}
+
+.main-title-section h2 {
+  font-size: 3.5rem;
+}
+
+.main-title-section h3 {
+  font-size: 2.5rem;
+}
+
+.executive-committee {
+  width: 100%;
+  height: 500px;
+  background-color: rgb(231, 193, 110); 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title-section {
+  height: 60px;
+  margin-bottom: 1rem;
+}
+
+.title-section h3 {
+  font-family: Playfair Display;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color:rgb(107, 7, 32);
+}
+
+.executive-committee-members {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.big-card {
+  flex: 1;
+}
+
+.small-card-deck {
+  flex: 2;
+  display: flex;
+  margin: 0 .75rem;
+  gap: 1px;
+}
+
+.left-deck, .right-deck {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: saddlebrown;
+  flex: 1;
+  gap: 1px;
+}

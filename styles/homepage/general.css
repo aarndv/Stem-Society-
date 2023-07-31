@@ -1,0 +1,52 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+/*
+fix
+*/
+
+html, 
+body {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: hidden;
+  margin: 0;
+  padding-top: 114px;
+  height: 4600px;
+  background-image: linear-gradient(rgb(107,7,32) 80%, rgb(231,193,110));
+  overflow-x: hidden;
+}
+
+@media only screen and (min-width: 500px) {
+  body {
+    height: 4250px;
+  }
+}
+
+@media only screen and (min-width: 820px) {
+  body{
+    padding-top: 72px;
+    height: 4200px;
+  }
+}
+
+@media only screen and (min-width: 1165px) {
+  body {
+    height: 4000px;
+  }
+}
