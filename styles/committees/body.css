@@ -1,7 +1,22 @@
+.border {
+  margin: 0;
+  border-style: solid;
+  width: 100%;
+  border-width: 2px;
+}
+
+.red-border {
+  border-color: rgb(107, 7, 32);
+}
+
+.yellow-border {
+  border-color: rgb(231, 193, 110);
+}
+
 main {
   background-color: rgb(107, 7, 32);
   width: 100vw;
-  height: 3000px;
+  height: 1850px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,14 +53,34 @@ main {
   font-size: 2.5rem;
 }
 
-.executive-committee {
+
+
+.committee {
+  margin-bottom: 200px;
   width: 100%;
-  height: 500px;
+  height: 250px;
   background-color: rgb(231, 193, 110); 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+}
+
+.red-color {
+  color: rgb(107, 7, 32);
+}
+
+.red-background-color {
+  background-color: rgb(107, 7, 32);
+}
+
+.yellow-color {
+  color: rgb(231, 193, 110);
+  text-align: center;
+}
+
+.yellow-color h3{
+  margin-top: 0;
 }
 
 .title-section {
@@ -57,33 +92,113 @@ main {
   font-family: Playfair Display;
   font-weight: bold;
   font-size: 1.5rem;
-  color:rgb(107, 7, 32);
+  text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.35);
 }
 
-.executive-committee-members {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+
+.executive-image {
+  width: 100%;
 }
 
-.big-card {
-  flex: 1;
+@media only screen and (min-width: 400px) {
+  main, body {
+    height: 2150px;
+  }
 }
 
-.small-card-deck {
-  flex: 2;
-  display: flex;
-  margin: 0 .75rem;
-  gap: 1px;
+@media only screen and (min-width: 560px) {
+  main, body {
+    height: 2400px;
+  }
 }
 
-.left-deck, .right-deck {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  background-color: saddlebrown;
-  flex: 1;
-  gap: 1px;
+
+@media only screen and (min-width: 700px) {
+  main, body {
+    height: 2900px;
+  }
+  
+  .title-section h3 {
+    font-size: 2.125rem;
+    margin-top: .5rem;
+  }
+
+  .committee {
+    margin-bottom: 400px;
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  main, body {
+    height: 3500px;
+  }
+}
+
+@media only screen and (min-width:1180px) {
+  main, body {
+    height: 4250px;
+  }
+  
+  .title-section h3 {
+    font-size: 3.525rem;
+    margin-top: .5rem;
+  }
+
+  .committee {
+    margin-bottom: 700px;
+  }
+
+  .border {
+    margin: 1rem 0;
+    border-width: 2px;
+  }
+  
+
+  .image {
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  main, body {
+    height: 4550px;
+  }
+}
+
+@media only screen and (min-width: 1460px) {
+  main, body {
+    height: 4800px;
+  }
+}
+
+
+@media only screen and (min-width:1600px) {
+  main, body {
+    height: 5700px;
+  }
+
+  .title-section h3 {
+    font-size: 4.525rem;
+    margin-top: .5rem;
+  }
+
+  .committee {
+    margin-bottom: 1000px;
+  }
+
+  .border {
+    margin: 2rem 0;
+    border-width: 2px;
+  }
+  
+
+  .image {
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  main, body {
+    height: 6050px;
+  }
 }
