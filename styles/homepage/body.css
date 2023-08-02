@@ -312,6 +312,24 @@
   left: -10px;
 }
 
+.q3 a{
+  text-decoration: none;
+  color:rgb(137, 7, 32);
+  transition: opacity 120ms;
+}
+
+.q3 a:hover {
+  opacity: 0.5;
+}
+
+.q3 a:active {
+  opacity: 0.2;
+}
+
+.q3 strong{
+  cursor: pointer;
+}
+
 .contacts-container {
   display: flex;
   flex-direction: column;
