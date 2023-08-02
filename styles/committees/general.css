@@ -16,12 +16,12 @@ body {
 
 body {
   overflow-y: hidden;
-  height: 1850px;
+  height: 2400px;
   padding-top: 114px;
 }
 
 @media only screen and (min-width: 820px) {
-  body{
-    padding-top: 72px;
+  body {
+    padding-top: 78px;
   }
 }

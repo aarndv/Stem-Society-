@@ -204,24 +204,24 @@
 }
 
 .goal1 {
-  background-image: url(../imgs/bg1.jpg);
+  background-image: url(../../imgs/bg1.jpg);
   background-size: 400px; 
   background-position-x: 25%;
 }
 
 .goal2 {
-  background-image: url(../imgs/bg2.jpg);
+  background-image: url(../../imgs/bg2.jpg);
   background-size: 300px;
   background-position-x: 50%;
 }
 
 .goal3 {
-  background-image: url(../imgs/bg3.jpg);
+  background-image: url(../../imgs/bg3.jpg);
   background-size: 300px;
 }
 
 .goal4 {
-  background-image: url(../imgs/bg4.jpg);
+  background-image: url(../../imgs/bg4.jpg);
   background-size: 300px;
 }
 
@@ -467,28 +467,28 @@
   }
 
   .goal1 {
-    background-image: url(../imgs/bg1.jpg);
+    background-image: url(../../imgs/bg1.jpg);
     background-size: 600px; 
     background-position-y: 25%;
     transition: all 150ms;
   }
   
   .goal2 {
-    background-image: url(../imgs/bg2.jpg);
+    background-image: url(../../imgs/bg2.jpg);
     background-size: 480px;
     background-position-y: 60%;
     transition: all 150ms;
   }
   
   .goal3 {
-    background-image: url(../imgs/bg3.jpg);
+    background-image: url(../../imgs/bg3.jpg);
     background-size: 450px;
     background-position-x: 100%;
     transition: all 150ms;
   }
   
   .goal4 {
-    background-image: url(../imgs/bg4.jpg);
+    background-image: url(../../imgs/bg4.jpg);
     background-size: 480px;
     transition: all 150ms;
   }
@@ -607,26 +607,26 @@
   }
   
   .goal1 {
-    background-image: url(../imgs/bg1.jpg);
+    background-image: url(../../imgs/bg1.jpg);
     background-size: 500px; 
     background-position-x: 25%;
   }
 
   .goal2 {
-    background-image: url(../imgs/bg2.jpg);
+    background-image: url(../../imgs/bg2.jpg);
     background-size: 500px;
     background-position-y: 60%;
   }
 
   .goal3 {
-    background-image: url(../imgs/bg3.jpg);
+    background-image: url(../../imgs/bg3.jpg);
     background-size: 450px;
     background-position-x: 100%;
   }
 
   .goal4 {
-    background-image: url(../imgs/bg4.jpg);
-    background-size: 300px;
+    background-image: url(../../imgs/bg4.jpg);
+    background-size: 500px;
   }
 
   .question-card {
